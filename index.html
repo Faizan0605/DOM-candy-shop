@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy-shop</title>
+    
+   
+
+</head>
+<body>
+
+
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="candyname">Candy Name</label>
+        <input id="candyname" name="candyname" type="text" />
+    
+        <label for="description">Description</label>
+        <input id="description" name="description" type="text" />
+    
+        <label for="price">Price</label>
+        <input id="price" name="price" type="number" />
+    
+        <label for="quantity">Quantity</label>
+        <input id="quantity" name="quantity" type="number" />
+    
+        <button type="submit">Add Item</button>
+    </form>
+    
+    <br>
+    
+    <h3>Available candies</h3>
+    
+    <ul class="candies">
+    
+    </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.20.0/axios.js"
+        integrity="sha512-6/5zO9B3GKTKl45L4FHRPB/d5PamwD37Gnz+GGa18atcadWWcC+UQjbXKNVkMN+IY6tPrJvN/h3Wn5dZgXEYKg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>
